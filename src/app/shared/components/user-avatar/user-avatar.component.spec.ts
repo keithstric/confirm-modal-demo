@@ -3,7 +3,7 @@ import {AuthService} from '../../../core/services/auth/auth.service';
 import {provideMockStore} from '@ngrx/store/testing';
 import {MockAuthService} from '../../../testing/mock-services';
 
-import {UserAvatarComponent} from '@shared/components/user-avatar/user-avatar.component';
+import {UserAvatarComponent} from '../user-avatar/user-avatar.component';
 
 describe('UserAvatarComponent', () => {
 	let component: UserAvatarComponent;

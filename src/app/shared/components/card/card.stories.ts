@@ -1,4 +1,4 @@
-import {CardComponent} from '@shared/components/card/card.component';
+import {CardComponent} from '../../components/card/card.component';
 import {moduleMetadata} from '@storybook/angular';
 
 export default {

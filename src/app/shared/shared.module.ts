@@ -1,10 +1,10 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
-import {UserAvatarComponent} from '@shared/components/user-avatar/user-avatar.component';
-import {FileDnDDirective} from '@shared/directives/file-dn-d.directive';
-import {SafeHtmlPipe} from '@shared/pipes/safe-html.pipe';
+import {SnackBarRef} from './components/snack-bar/snack-bar.ref';
+import {UserAvatarComponent} from './components/user-avatar/user-avatar.component';
+import {FileDnDDirective} from './directives/file-dn-d.directive';
+import {SafeHtmlPipe} from './pipes/safe-html.pipe';
 import { CardComponent } from './components/card/card.component';
 import { ConfirmModalComponent } from './components/confirm-modal/confirm-modal.component';
 import { SnackBarComponent } from './components/snack-bar/snack-bar.component';

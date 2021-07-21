@@ -1,9 +1,9 @@
 import {TestBed} from '@angular/core/testing';
-import {NotificationService} from '../services/notification/notification.service';
-import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
-import {MockUiService} from 'src/app/testing/mock-services';
+import {NotificationService} from '../notification/notification.service';
+import {SnackBarRef} from '../../../shared/components/snack-bar/snack-bar.ref';
+import {MockUiService} from '../../../testing/mock-services';
 
-import {AppErrorHandler} from 'src/app/core/services/error-handler/error-handler.service';
+import {AppErrorHandler} from '../../../core/services/error-handler/error-handler.service';
 
 describe('ErrorService', () => {
 	let service: AppErrorHandler;

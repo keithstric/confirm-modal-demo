@@ -1,13 +1,13 @@
 import {SwPush} from '@angular/service-worker';
 import {provideMockStore} from '@ngrx/store/testing';
 import {moduleMetadata} from '@storybook/angular';
-import {UserAvatarComponent} from '@shared/components/user-avatar/user-avatar.component';
-import {AuthService} from '@core/services/auth/auth.service';
-import {MockStorybookNoUserAvatarComponent, MockStorybookUserAvatarComponent} from 'src/app/testing/mock-components';
-import {MockAuthService} from 'src/app/testing/mock-services';
+import {UserAvatarComponent} from '../../../shared/components/user-avatar/user-avatar.component';
+import {AuthService} from '../../../core/services/auth/auth.service';
+import {MockStorybookNoUserAvatarComponent, MockStorybookUserAvatarComponent} from '../../../testing/mock-components';
+import {MockAuthService} from '../../../testing/mock-services';
 
 // @ts-ignore
-import docs from '@shared/components/user-avatar/README.md';
+import docs from '../user-avatar/README.md';
 
 const initialState = {
 	user: {

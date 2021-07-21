@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {ServiceLocator} from '../service-locator';
-import {ConfirmModalConfig} from '@shared/components/confirm-modal/confirm-modal.interface';
-import {SnackbarConfig} from '@shared/components/snack-bar/snack-bar.interface';
-import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
+import {ConfirmModalConfig} from '../../../shared/components/confirm-modal/confirm-modal.interface';
+import {SnackbarConfig} from '../../../shared/components/snack-bar/snack-bar.interface';
+import {SnackBarRef} from '../../../shared/components/snack-bar/snack-bar.ref';
 
 enum NotificationPermissions {
 	GRANTED = 'granted',

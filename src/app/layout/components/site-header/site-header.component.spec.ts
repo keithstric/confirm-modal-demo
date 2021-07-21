@@ -2,10 +2,10 @@ import {HttpClientTestingModule} from '@angular/common/http/testing';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import {AuthService} from '@core/services/auth/auth.service';
-import {HttpService} from '@core/services/http/http.service';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
-import {SiteHeaderComponent} from '@layout/components/site-header/site-header.component';
+import {AuthService} from '../../../core/services/auth/auth.service';
+import {HttpService} from '../../../core/services/http/http.service';
+import {LocalStorageService} from '../../../core/services/local-storage/local-storage.service';
+import {SiteHeaderComponent} from '../site-header/site-header.component';
 import {provideMockStore} from '@ngrx/store/testing';
 import {
 	MockAuthService,

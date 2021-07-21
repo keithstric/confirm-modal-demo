@@ -1,4 +1,4 @@
-import {LogLevel} from '@core/interfaces/logger.interface';
+import {LogLevel} from '../app/core/interfaces/logger.interface';
 import {name, version} from 'package.json';
 
 export const environment = {

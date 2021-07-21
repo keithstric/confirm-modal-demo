@@ -1,10 +1,10 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import {Router} from '@angular/router';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {ChangeUserPasswordAction} from '@core/root-store/user/user.action';
+import {iUserState} from '../../../../core/root-store/models/app-state.model';
+import {ChangeUserPasswordAction} from '../../../../core/root-store/user/user.action';
 import {Store} from '@ngrx/store';
-import {NotificationService} from '@core/services/notification/notification.service';
+import {NotificationService} from '../../../../core/services/notification/notification.service';
 
 @Component({
 	selector: 'app-change-password',

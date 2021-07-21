@@ -9,7 +9,7 @@ import {HttpCacheService} from '../services/http-cache/http-cache.service';
 import {Logger} from '../services/logger/logger';
 import {Observable, of} from 'rxjs';
 import {catchError, finalize, tap} from 'rxjs/operators';
-import {LoadingService} from '@layout/services/loading/loading.service';
+import {LoadingService} from '../../layout/services/loading/loading.service';
 
 /**
  * Intercept all http requests

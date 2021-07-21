@@ -1,7 +1,7 @@
 import {TestBed} from '@angular/core/testing';
 import {ServiceWorkerModule, SwPush} from '@angular/service-worker';
-import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
-import {environment} from 'src/environments/environment';
+import {SnackBarRef} from '../../../shared/components/snack-bar/snack-bar.ref';
+import {environment} from '../../../../environments/environment';
 
 import {NotificationService} from './notification.service';
 

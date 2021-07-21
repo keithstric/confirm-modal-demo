@@ -1,7 +1,7 @@
 import {RouterTestingModule} from '@angular/router/testing';
 import {moduleMetadata} from '@storybook/angular';
-import {BreadcrumbsComponent} from '@layout/components/breadcrumbs/breadcrumbs.component';
-import {MockStorybookPageBreadcrumbHeaderComponent} from 'src/app/testing/mock-components';
+import {BreadcrumbsComponent} from '../breadcrumbs/breadcrumbs.component';
+import {MockStorybookPageBreadcrumbHeaderComponent} from '../../../testing/mock-components';
 
 // @ts-ignore
 import pageBreadcrumbHeaderNotes from './README.md';
