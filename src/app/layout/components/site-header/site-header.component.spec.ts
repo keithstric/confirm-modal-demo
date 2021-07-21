@@ -11,7 +11,7 @@ import {
 	MockAuthService,
 	MockHttpService,
 	MockLocalStorageService
-} from 'src/app/testing/mock-services';
+} from '../../../testing/mock-services';
 
 describe('SiteHeaderComponent', () => {
 	let component: SiteHeaderComponent;

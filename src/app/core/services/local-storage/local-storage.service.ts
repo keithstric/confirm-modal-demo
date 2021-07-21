@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {LocalStorageTypes} from '../../interfaces/local-storage.interface';
-import {PROJECT_NAME} from 'src/environments/environment';
+import {PROJECT_NAME} from '../../../../environments/environment';
 
 @Injectable({
 	providedIn: 'root'

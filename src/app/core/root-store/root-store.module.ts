@@ -6,7 +6,7 @@ import {EffectsModule} from '@ngrx/effects';
 import {StoreRouterConnectingModule} from '@ngrx/router-store';
 import {MetaReducer, StoreModule} from '@ngrx/store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
-import {environment, PROJECT_NAME} from 'src/environments/environment';
+import {environment, PROJECT_NAME} from '../../../environments/environment';
 
 export const metaReducers: MetaReducer[] = [UserFromStorageMetaReducer];
 

@@ -1,6 +1,6 @@
 import {TestBed} from '@angular/core/testing';
 
-import {DomInjectorService} from 'src/app/core/services/dom-injector/dom-injector.service';
+import {DomInjectorService} from './dom-injector.service';
 
 describe('DomInjectorService', () => {
 	let service: DomInjectorService;

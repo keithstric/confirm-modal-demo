@@ -1,8 +1,8 @@
 import {APP_BASE_HREF} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {moduleMetadata} from '@storybook/angular';
-import {AppComponent} from 'src/app/app.component';
-import {AppModule} from 'src/app/app.module';
+import {AppComponent} from './app.component';
+import {AppModule} from './app.module';
 
 // @ts-ignore
 import appNotes from '../../README.md';

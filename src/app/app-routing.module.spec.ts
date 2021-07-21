@@ -6,7 +6,7 @@ import {appRoutes} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {
 	MockPageNotFoundComponent
-} from 'src/app/testing/mock-components';
+} from './testing/mock-components';
 
 
 describe('Routing', () => {

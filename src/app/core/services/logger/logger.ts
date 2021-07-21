@@ -3,7 +3,7 @@ import {AbstractTransport} from '../logger/abstract-transport';
 import {ConsoleTransport} from '../logger/console-transport';
 import {LogEntry} from '../logger/log-entry';
 import {NotificationService} from '../notification/notification.service';
-import {environment, LOG_LEVEL} from 'src/environments/environment';
+import {environment, LOG_LEVEL} from '../../../../environments/environment';
 
 /**
  * The application logger. This is not a service and does not need to be injected in the constructor but can
