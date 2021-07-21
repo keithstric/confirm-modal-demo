@@ -1,12 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {LogOutUserAction} from '@core/root-store/user/user.action';
+import {iUserState} from '../../../core/root-store/models/app-state.model';
+import {LogOutUserAction} from '../../../core/root-store/user/user.action';
 import {Store} from '@ngrx/store';
-import {User} from '@core/models/user.model';
+import {User} from '../../../core/models/user.model';
 import {Subscription} from 'rxjs';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
-import {PROJECT_NAME} from 'src/environments/environment';
+import {LocalStorageService} from '../../../core/services/local-storage/local-storage.service';
+import {PROJECT_NAME} from '../../../../environments/environment';
 
 /**
  * The default header

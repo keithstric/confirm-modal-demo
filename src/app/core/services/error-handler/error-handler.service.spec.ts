@@ -1,5 +1,5 @@
 import {TestBed} from '@angular/core/testing';
-import {NotificationService} from '@core/services/notification/notification.service';
+import {NotificationService} from '../services/notification/notification.service';
 import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
 import {MockUiService} from 'src/app/testing/mock-services';
 

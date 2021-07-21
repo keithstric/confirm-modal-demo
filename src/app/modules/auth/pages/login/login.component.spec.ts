@@ -2,11 +2,11 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterTestingModule} from '@angular/router/testing';
-import {AppErrorHandler} from '@core/services/error-handler/error-handler.service';
-import {AuthService} from '@core/services/auth/auth.service';
-import {NotificationService} from '@core/services/notification/notification.service';
+import {AppErrorHandler} from '../../../../core/services/error-handler/error-handler.service';
+import {AuthService} from '../../../../core/services/auth/auth.service';
+import {NotificationService} from '../../../../core/services/notification/notification.service';
 import {provideMockStore} from '@ngrx/store/testing';
-import {MockAuthService, MockErrorService, MockUiService} from 'src/app/testing/mock-services';
+import {MockAuthService, MockErrorService, MockUiService} from '../../../../testing/mock-services';
 
 import {LoginComponent} from './login.component';
 

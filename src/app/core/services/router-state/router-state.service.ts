@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
-import {RouterStateUrl} from '@core/root-store/models/app-state.model';
+import {RouterStateUrl} from '../../root-store/models/app-state.model';
 import {RouterReducerState} from '@ngrx/router-store';
 import {Store} from '@ngrx/store';
-import * as fromRoot from '@core/root-store';
+import * as fromRoot from '../../root-store';
 import {pairwise} from 'rxjs/operators';
 
 export interface iFromToRouterHistory {

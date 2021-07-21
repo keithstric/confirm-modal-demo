@@ -15,8 +15,8 @@ import {
 	RegisterUserFailureAction,
 	RegisterUserSuccessAction,
 	UserActionTypes
-} from '@core/root-store/user/user.action';
-import {AuthService} from '@core/services/auth/auth.service';
+} from './user.action';
+import {AuthService} from '../../services/auth/auth.service';
 import {Actions, Effect, ofType} from '@ngrx/effects';
 import {of} from 'rxjs';
 import {catchError, map, mergeMap} from 'rxjs/operators';

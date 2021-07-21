@@ -1,8 +1,8 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import {ActionsSubject, ReducerManager, StateObservable, Store, StoreModule} from '@ngrx/store';
+import {StoreModule} from '@ngrx/store';
 import {provideMockStore} from '@ngrx/store/testing';
-import {PROJECT_NAME} from 'src/environments/environment';
+import {PROJECT_NAME} from '../environments/environment';
 import {AppComponent} from './app.component';
 
 describe('AppComponent', () => {

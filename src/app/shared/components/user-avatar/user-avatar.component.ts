@@ -1,9 +1,9 @@
 import {Component, EventEmitter, OnDestroy, OnInit, Output} from '@angular/core';
-import {User} from '@core/models/user.model';
-import {iUserState} from '@core/root-store/models/app-state.model';
+import {User} from '../../../core/models/user.model';
+import {iUserState} from '../../../core/root-store/models/app-state.model';
 import {Store} from '@ngrx/store';
 import {Subscription} from 'rxjs';
-import {AuthService} from '@core/services/auth/auth.service';
+import {AuthService} from '../../../core/services/auth/auth.service';
 import * as tinycolor from 'tinycolor2';
 
 /**

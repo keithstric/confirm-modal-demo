@@ -1,7 +1,7 @@
 import {ComponentRef, EmbeddedViewRef, Injectable, Injector} from '@angular/core';
-import {DomInjectorService} from '@core/services/dom-injector/dom-injector.service';
-import {SnackBarComponent} from '@shared/components/snack-bar/snack-bar.component';
-import {SnackbarConfig} from '@shared/components/snack-bar/snack-bar.interface';
+import {DomInjectorService} from '../../../core/services/dom-injector/dom-injector.service';
+import {SnackBarComponent} from '../snack-bar/snack-bar.component';
+import {SnackbarConfig} from '../snack-bar/snack-bar.interface';
 import {BehaviorSubject} from 'rxjs';
 
 interface SnackBarDisplay {

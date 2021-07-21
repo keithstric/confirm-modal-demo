@@ -3,11 +3,11 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterTestingModule} from '@angular/router/testing';
-import {AppErrorHandler} from '@core/services/error-handler/error-handler.service';
-import {HttpService} from '@core/services/http/http.service';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
+import {AppErrorHandler} from '../../../../core/services/error-handler/error-handler.service';
+import {HttpService} from '../../../../core/services/http/http.service';
+import {LocalStorageService} from '../../../../core/services/local-storage/local-storage.service';
 import {provideMockStore} from '@ngrx/store/testing';
-import {MockErrorService, MockHttpService, MockLocalStorageService} from 'src/app/testing/mock-services';
+import {MockErrorService, MockHttpService, MockLocalStorageService} from '../../../../testing/mock-services';
 
 import {RegisterComponent} from './register.component';
 

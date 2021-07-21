@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {NavigationEnd, NavigationStart, Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
-import {titleCaseString} from '@shared/utils/string.utils';
-import {Breadcrumb} from '@layout/interfaces/breadcrumb.interface';
+import {titleCaseString} from '../../../shared/utils/string.utils';
+import {Breadcrumb} from '../../interfaces/breadcrumb.interface';
 
 /**
  * Provides management of breadcrumbs base on the route

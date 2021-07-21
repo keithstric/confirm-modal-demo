@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {CustomSerializer, reducers} from '@core/root-store/index';
-import {UserEffects, UserFromStorageMetaReducer} from '@core/root-store/user';
+import {CustomSerializer, reducers} from '../root-store/index';
+import {UserEffects, UserFromStorageMetaReducer} from '../root-store/user';
 import {EffectsModule} from '@ngrx/effects';
 import {StoreRouterConnectingModule} from '@ngrx/router-store';
 import {MetaReducer, StoreModule} from '@ngrx/store';

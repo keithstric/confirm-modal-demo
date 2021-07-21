@@ -1,9 +1,9 @@
 import {HttpRequest, HttpResponse} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import {CachableRoutePatterns} from '@core/interfaces/api.interface';
-import {LocalStorageTypes} from '@core/interfaces/local-storage.interface';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
-import {Logger} from '@core/services/logger/logger';
+import {CachableRoutePatterns} from '../../interfaces/api.interface';
+import {LocalStorageTypes} from '../../interfaces/local-storage.interface';
+import {LocalStorageService} from '../local-storage/local-storage.service';
+import {Logger} from '../logger/logger';
 import * as Route from 'route-parser';
 
 abstract class HttpCache {

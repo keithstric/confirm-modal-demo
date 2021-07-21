@@ -1,8 +1,8 @@
 import {HttpClientTestingModule} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import {AppErrorHandler} from '@core/services/error-handler/error-handler.service';
-import {NotificationService} from '@core/services/notification/notification.service';
+import {AppErrorHandler} from '../error-handler/error-handler.service';
+import {NotificationService} from '../notification/notification.service';
 import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
 import {MockErrorService} from 'src/app/testing/mock-services';
 

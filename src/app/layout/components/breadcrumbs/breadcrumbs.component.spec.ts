@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import {BreadcrumbService} from '@layout/services/breadcrumb/breadcrumb.service';
+import {BreadcrumbService} from '../../services/breadcrumb/breadcrumb.service';
 
 import {BreadcrumbsComponent} from './breadcrumbs.component';
 

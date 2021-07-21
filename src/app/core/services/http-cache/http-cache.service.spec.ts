@@ -1,9 +1,9 @@
 import {HttpRequest, HttpResponse} from '@angular/common/http';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
-import {LocalStorageTypes} from '@core/interfaces/local-storage.interface';
-import {HttpCacheService} from '@core/services/http-cache/http-cache.service';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
+import {LocalStorageTypes} from '../interfaces/local-storage.interface';
+import {HttpCacheService} from '../services/http-cache/http-cache.service';
+import {LocalStorageService} from '../services/local-storage/local-storage.service';
 import {MockDataService} from '@testing/mock-data.service';
 
 

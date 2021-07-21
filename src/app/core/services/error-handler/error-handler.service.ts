@@ -1,8 +1,8 @@
 import {HttpErrorResponse} from '@angular/common/http';
 import {ErrorHandler, Injectable} from '@angular/core';
-import {Logger} from '@core/services/logger/logger';
-import {NotificationService} from '@core/services/notification/notification.service';
-import {SnackbarConfig, SnackbarMessageTypes} from '@shared/components/snack-bar/snack-bar.interface';
+import {Logger} from '../logger/logger';
+import {NotificationService} from '../notification/notification.service';
+import {SnackbarConfig, SnackbarMessageTypes} from '../../../shared/components/snack-bar/snack-bar.interface';
 import {Subject, throwError} from 'rxjs';
 
 /**

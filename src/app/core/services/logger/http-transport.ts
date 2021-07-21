@@ -1,8 +1,8 @@
 import {HttpClient} from '@angular/common/http';
-import {LogLevel} from '@core/interfaces/logger.interface';
-import {AbstractTransport} from '@core/services/logger/abstract-transport';
-import {LogEntry} from '@core/services/logger/log-entry';
-import {ServiceLocator} from '@core/services/service-locator';
+import {LogLevel} from '../../interfaces/logger.interface';
+import {AbstractTransport} from '../logger/abstract-transport';
+import {LogEntry} from '../logger/log-entry';
+import {ServiceLocator} from '../service-locator';
 import {BehaviorSubject, throwError} from 'rxjs';
 import {catchError} from 'rxjs/operators';
 

@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import {NotificationService} from '@core/services/notification/notification.service';
-import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
-import {MockUiService} from 'src/app/testing/mock-services';
+import {NotificationService} from '../../core/services/notification/notification.service';
+import {SnackBarRef} from '../../shared/components/snack-bar/snack-bar.ref';
+import {MockUiService} from '../../testing/mock-services';
 
 import {HomeComponent} from './home.component';
 

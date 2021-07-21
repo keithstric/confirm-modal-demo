@@ -1,7 +1,7 @@
-import {LocalStorageTypes} from '@core/interfaces/local-storage.interface';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {UserAction, UserActionTypes} from '@core/root-store/user/user.action';
-import {LocalStorageService} from '@core/services/local-storage/local-storage.service';
+import {LocalStorageTypes} from '../../interfaces/local-storage.interface';
+import {iUserState} from '../models/app-state.model';
+import {UserAction, UserActionTypes} from './user.action';
+import {LocalStorageService} from '../../services/local-storage/local-storage.service';
 import {ActionReducer} from '@ngrx/store';
 
 export const initialUserState: iUserState = {

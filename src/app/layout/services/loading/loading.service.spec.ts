@@ -1,7 +1,7 @@
 import {TestBed} from '@angular/core/testing';
 
-import {LoadingService} from '@layout/services/loading/loading.service';
-import {ActionsSubject, ReducerManager, StateObservable, Store, StoreModule} from '@ngrx/store';
+import {LoadingService} from '../../services/loading/loading.service';
+import {StoreModule} from '@ngrx/store';
 import {provideMockStore} from '@ngrx/store/testing';
 
 describe('LoadingService', () => {

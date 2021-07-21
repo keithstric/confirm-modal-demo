@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {ApiMethod} from '@core/interfaces/api.interface';
-import {HttpService} from '@core/services/http/http.service';
-import {Logger} from '@core/services/logger/logger';
-import {NotificationService} from '@core/services/notification/notification.service';
-import {SnackbarMessageTypes} from '@shared/components/snack-bar/snack-bar.interface';
+import {ApiMethod} from '../../core/interfaces/api.interface';
+import {HttpService} from '../../core/services/http/http.service';
+import {Logger} from '../../core/services/logger/logger';
+import {NotificationService} from '../../core/services/notification/notification.service';
+import {SnackbarMessageTypes} from '../../shared/components/snack-bar/snack-bar.interface';
 
 @Component({
 	selector: 'app-home',

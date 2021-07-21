@@ -1,9 +1,9 @@
 import {HttpErrorResponse} from '@angular/common/http';
-import {SnackbarConfig} from '@shared/components/snack-bar/snack-bar.interface';
+import {SnackbarConfig} from '../shared/components/snack-bar/snack-bar.interface';
 import {BehaviorSubject, Subject} from 'rxjs';
 import {ApiEndpoints, ApiMethod} from '../core/interfaces/api.interface';
-import userJson from 'src/app/testing/mock-data/user.json';
-import {PROJECT_NAME} from 'src/environments/environment';
+import userJson from './mock-data/user.json';
+import {PROJECT_NAME} from '../../environments/environment';
 
 export class MockHttpService {
 	requestCall(api: ApiEndpoints | string, method: ApiMethod, data?: any) {

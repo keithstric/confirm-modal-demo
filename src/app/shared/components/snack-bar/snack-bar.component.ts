@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, ViewEncapsulation, Output} from '@angular/core';
-import {SnackbarAction, SnackbarMessageTypes} from '@shared/components/snack-bar/snack-bar.interface';
+import {SnackbarAction, SnackbarMessageTypes} from '../snack-bar/snack-bar.interface';
 
 /**
  * A toaster/snackbar component. Use SnackbarRef to display

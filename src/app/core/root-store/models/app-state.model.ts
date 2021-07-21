@@ -1,5 +1,5 @@
 import {Params} from '@angular/router';
-import {User} from '@core/models/user.model';
+import {User} from '../../models/user.model';
 import {RouterReducerState} from '@ngrx/router-store';
 
 export interface iStateItem {

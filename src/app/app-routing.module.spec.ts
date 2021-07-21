@@ -2,8 +2,8 @@ import {Location} from '@angular/common';
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import {Router} from '@angular/router';
 import {RouterTestingModule} from '@angular/router/testing';
-import {appRoutes} from 'src/app/app-routing.module';
-import {AppComponent} from 'src/app/app.component';
+import {appRoutes} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {
 	MockPageNotFoundComponent
 } from 'src/app/testing/mock-components';

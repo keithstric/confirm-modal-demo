@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import userJson from 'src/app/testing/mock-data/user.json';
+import userJson from './mock-data/user.json';
 
 /**
  * This service is for providing mock data for unit tests

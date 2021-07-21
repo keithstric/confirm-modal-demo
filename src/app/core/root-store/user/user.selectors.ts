@@ -1,5 +1,5 @@
-import {selectUserFeatureState} from '@core/root-store';
-import {iUserState} from '@core/root-store/models/app-state.model';
+import {selectUserFeatureState} from '../';
+import {iUserState} from '../models/app-state.model';
 import {createSelector} from '@ngrx/store';
 import * as fromUser from './user.reducer';
 

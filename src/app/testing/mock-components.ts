@@ -1,9 +1,9 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {iUserState} from '@core/root-store/models/app-state.model';
-import {AuthService} from '@core/services/auth/auth.service';
+import {iUserState} from '../core/root-store/models/app-state.model';
+import {AuthService} from '../core/services/auth/auth.service';
 import {MockStore} from '@ngrx/store/testing';
-import {PageBreadcrumbHeaderComponent} from '@layout/components/page-breadcrumb-header/page-breadcrumb-header.component';
-import {BreadcrumbService} from '@layout/services/breadcrumb/breadcrumb.service';
+import {PageBreadcrumbHeaderComponent} from '../layout/components/page-breadcrumb-header/page-breadcrumb-header.component';
+import {BreadcrumbService} from '../layout/services/breadcrumb/breadcrumb.service';
 
 @Component({
 	selector: 'app-card',

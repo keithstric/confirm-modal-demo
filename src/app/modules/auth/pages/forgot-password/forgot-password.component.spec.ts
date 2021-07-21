@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import {FormBuilder} from '@angular/forms';
 import {RouterTestingModule} from '@angular/router/testing';
-import {AuthService} from '@core/services/auth/auth.service';
+import {AuthService} from '../../../../core/services/auth/auth.service';
 import {provideMockStore} from '@ngrx/store/testing';
-import {MockAuthService} from 'src/app/testing/mock-services';
+import {MockAuthService} from '../../../../testing/mock-services';
 
 import {ForgotPasswordComponent} from './forgot-password.component';
 

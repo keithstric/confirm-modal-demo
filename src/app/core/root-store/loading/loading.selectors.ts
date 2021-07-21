@@ -1,4 +1,4 @@
-import {selectLoadingFeatureState} from '@core/root-store';
+import {selectLoadingFeatureState} from '../';
 import {createSelector} from '@ngrx/store';
 import * as fromLoading from './loading.reducer';
 

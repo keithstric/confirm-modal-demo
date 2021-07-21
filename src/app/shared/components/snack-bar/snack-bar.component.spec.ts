@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';
+import {SnackBarRef} from '../snack-bar/snack-bar.ref';
 
 import {SnackBarComponent} from './snack-bar.component';
 

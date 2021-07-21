@@ -1,13 +1,13 @@
 import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
 import {RouterStateService} from './core/services/router-state/router-state.service';
-import {LayoutService} from '@layout/services/layout/layout.service';
+import {LayoutService} from './layout/services/layout/layout.service';
 import {Store} from '@ngrx/store';
 import {Subscription} from 'rxjs';
 import {delay} from 'rxjs/operators';
-import {SiteFooterComponent} from '@layout/components/site-footer/site-footer.component';
-import {SiteHeaderComponent} from '@layout/components/site-header/site-header.component';
-import {LoadingService} from '@layout/services/loading/loading.service';
-import {PROJECT_NAME} from 'src/environments/environment';
+import {SiteFooterComponent} from './layout/components/site-footer/site-footer.component';
+import {SiteHeaderComponent} from './layout/components/site-header/site-header.component';
+import {LoadingService} from './layout/services/loading/loading.service';
+import {PROJECT_NAME} from '../environments/environment';
 
 @Component({
 	selector: 'app-root',

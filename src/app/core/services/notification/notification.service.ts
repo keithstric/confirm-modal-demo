@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {ServiceLocator} from '@core/services/service-locator';
+import {ServiceLocator} from '../service-locator';
 import {ConfirmModalConfig} from '@shared/components/confirm-modal/confirm-modal.interface';
 import {SnackbarConfig} from '@shared/components/snack-bar/snack-bar.interface';
 import {SnackBarRef} from '@shared/components/snack-bar/snack-bar.ref';

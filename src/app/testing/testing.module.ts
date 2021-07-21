@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {CoreModule} from '@core/core.module';
-import {LayoutModule} from '@layout/layout.module';
-import {SharedModule} from '@shared/shared.module';
+import {CoreModule} from '../core/core.module';
+import {LayoutModule} from '../layout/layout.module';
+import {SharedModule} from '../shared/shared.module';
 import {
 	MockCardComponent,
 	MockPageBreadcrumbHeaderComponent,
@@ -11,7 +11,7 @@ import {
 	MockStorybookPageBreadcrumbHeaderComponent,
 	MockStorybookUserAvatarComponent,
 	MockStorybookDialogContentComponent, MockStorybookNoUserAvatarComponent
-} from 'src/app/testing/mock-components';
+} from './mock-components';
 
 const components = [
 	MockCardComponent,

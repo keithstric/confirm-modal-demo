@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {PageNotFoundComponent} from '@layout/components/page-not-found/page-not-found.component';
-import {HomeComponent} from '@modules/home/home.component';
+import {PageNotFoundComponent} from './layout/components/page-not-found/page-not-found.component';
+import {HomeComponent} from './modules/home/home.component';
 
 /**
  * This defines the application's routes. All base routes should be lazy loaded.

@@ -5,8 +5,8 @@ import {
 	HttpEvent,
 	HttpResponse, HttpErrorResponse
 } from '@angular/common/http';
-import {HttpCacheService} from '@core/services/http-cache/http-cache.service';
-import {Logger} from '@core/services/logger/logger';
+import {HttpCacheService} from '../services/http-cache/http-cache.service';
+import {Logger} from '../services/logger/logger';
 import {Observable, of} from 'rxjs';
 import {catchError, finalize, tap} from 'rxjs/operators';
 import {LoadingService} from '@layout/services/loading/loading.service';

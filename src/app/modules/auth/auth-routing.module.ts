@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ChangePasswordComponent} from '@modules/auth/pages/change-password/change-password.component';
-import {ForgotPasswordComponent} from '@modules/auth/pages/forgot-password/forgot-password.component';
-import {LoginComponent} from '@modules/auth/pages/login/login.component';
-import {RegisterComponent} from '@modules/auth/pages/register/register.component';
-import {UserComponent} from '@modules/auth/pages/user/user.component';
+import {ChangePasswordComponent} from '../auth/pages/change-password/change-password.component';
+import {ForgotPasswordComponent} from '../auth/pages/forgot-password/forgot-password.component';
+import {LoginComponent} from '../auth/pages/login/login.component';
+import {RegisterComponent} from '../auth/pages/register/register.component';
+import {UserComponent} from '../auth/pages/user/user.component';
 
 const routes: Routes = [
 	{path: '', redirectTo: 'login', pathMatch: 'full'},
