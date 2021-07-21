@@ -1,5 +1,5 @@
 import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
-import {RouterStateService} from '@core/services/router-state/router-state.service';
+import {RouterStateService} from './core/services/router-state/router-state.service';
 import {LayoutService} from '@layout/services/layout/layout.service';
 import {Store} from '@ngrx/store';
 import {Subscription} from 'rxjs';

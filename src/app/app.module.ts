@@ -1,14 +1,14 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {Injector, NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {CoreModule} from '@core/core.module';
-import {ServiceLocator} from '@core/services/service-locator';
+import {CoreModule} from './core/core.module';
+import {ServiceLocator} from './core/services/service-locator';
 import {LayoutModule} from '@layout/layout.module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
-import { SharedModule } from '@shared/shared.module';
+import { SharedModule } from './shared/shared.module';
 
 /**
  * The AppModule

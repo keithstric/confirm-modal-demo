@@ -1,4 +1,4 @@
-import {createModel, Mapping, Model} from '@core/models/model';
+import {createModel, Mapping, Model} from './model/model';
 
 export interface RawUser {
 	first_name: string;
