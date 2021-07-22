@@ -44,7 +44,8 @@ const sharedDirectives = [
 		NgxBootstrapModule
 	],
 	entryComponents: [
-		SnackBarComponent
+		SnackBarComponent,
+		ConfirmModalComponent
 	]
 })
 
