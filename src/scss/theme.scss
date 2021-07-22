@@ -11,3 +11,54 @@ $app-danger: #f8d7da;
 $app-danger-color: #721c24;
 $app-warn: #fff3cd;
 $app-warn-color: #856404;
+
+// theme colors
+$app-primary: #2175d9;
+$app-light-primary: #90baec;
+$app-lighter-primary: #E8F1FB;
+$app-dark-primary: #0f1941;
+$app-secondary: #0f1941;
+$app-tertiary: #6ba5b4;
+$color-light: #f7f5f1;
+
+/**
+ * Bootstrap theme variable over-rides
+ * Ensure all sizes are in "px" with exception of font-size which should be rem
+ * DO NOT USE rem, em or % for sizes, with exception of font-size. It will break the build.
+ **/
+$theme-colors: (
+	'primary': $app-primary,
+	'secondary': $app-secondary,
+	'success': $app-success,
+	'info': $app-info,
+	'warning': $app-warn,
+	'danger': $app-danger,
+	'light': $color-light,
+	'dark': $app-secondary,
+	'light-primary': $app-light-primary
+);
+
+/**
+The font-size uses rem (px will break the build). It assumes a browser font size of 16px, so
+all font sizes will be based on what the browser font size is defined as and should scale
+properly if the browser font size is different than 16px. This also doesn't break a user's
+preferences which is important for accessibility
+ref:
+  0.875rem = 14px;
+  1rem = 16px;
+  1.5rem = 24px;
+ */
+$body-bg: #F4F8F9;
+$body-color: $app-secondary;
+$font-family-base: "Graphik", sans-serif;
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-lg: 1.5rem;
+$grid-gutter-width: 24px;
+$link-color: $app-primary;
+/* Define custom-switch info here so that position is mostly calculated for us */
+$custom-control-indicator-size: 1.5rem;
+$custom-control-indicator-border-color: white;
+$custom-switch-width: 2.25rem;
+$custom-control-gutter: .75rem;
+/**************************/

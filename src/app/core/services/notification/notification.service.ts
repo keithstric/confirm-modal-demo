@@ -1,8 +1,10 @@
 import {Injectable} from '@angular/core';
+import {ConfirmModalComponent} from '@shared/components/confirm-modal/confirm-modal.component';
 import {ServiceLocator} from '../service-locator';
 import {ConfirmModalConfig} from '../../../shared/components/confirm-modal/confirm-modal.interface';
 import {SnackbarConfig} from '../../../shared/components/snack-bar/snack-bar.interface';
 import {SnackBarRef} from '../../../shared/components/snack-bar/snack-bar.ref';
+import {BsModalService, ModalOptions} from 'ngx-bootstrap/modal';
 
 enum NotificationPermissions {
 	GRANTED = 'granted',
@@ -35,7 +37,12 @@ export class NotificationService {
 	 * @param modalConfig
 	 */
 	static showConfirmDialog(modalConfig: ConfirmModalConfig) {
-		// const bsModalService = ServiceLocator.injector.get(BsModalService);
-		// return bsModalService.show(ConfirmModalComponent, {initialState: modalConfig});
+		// because this is a static method, cannot inject BsModalService into constructor and use that, need to locate it
+		const bsModalService = ServiceLocator.injector.get(BsModalService);
+		const modalConfigImpl: ModalOptions<ConfirmModalConfig> = {
+			...modalConfig.ngModalOptions,
+			initialState: modalConfig
+		};
+		return bsModalService.show(ConfirmModalComponent, modalConfigImpl);
 	}
 }

@@ -1,3 +1,5 @@
+@import '../_variables';
+
 a {
 	color: $primary;
 	text-decoration: none;
@@ -51,5 +53,12 @@ button {
 		background-color: $app-primary;
 		color: white;
 		@include elevation(3);
+	}
+}
+
+.component-modal {
+	i {
+		font-size: 0.8rem;
+		color: $success;
 	}
 }

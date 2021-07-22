@@ -1,5 +1,6 @@
-import {TemplateRef} from '@angular/core';
+import {Component, TemplateRef} from '@angular/core';
 import {FormGroup} from '@angular/forms';
+import {ModalOptions} from 'ngx-bootstrap/modal';
 
 export interface ConfirmModalConfig {
 	/**
@@ -17,11 +18,11 @@ export interface ConfirmModalConfig {
 	/**
 	 * The Subheading text for the modal
 	 */
-	modalSubHeading?: string;
+	modalSubTitle?: string;
 	/**
 	 * the Subheading html for the modal (inside the h6 block)
 	 */
-	modalSubHeadingHtml?: string;
+	modalSubTitleHtml?: string;
 	/**
 	 * HTML content to display in the body
 	 */
@@ -43,6 +44,10 @@ export interface ConfirmModalConfig {
 	 */
 	hideCancelButton?: boolean;
 	/**
+	 * True to hide the confirm button
+	 */
+	hideConfirmButton?: boolean;
+	/**
 	 * The label for the cancel button
 	 */
 	cancelButtonLabel?: string;
@@ -59,11 +64,23 @@ export interface ConfirmModalConfig {
 	 */
 	formGroup?: FormGroup;
 	/**
+	 * The ngx-bootstrap ModalOptions
+	 */
+	ngModalOptions?: ModalOptions;
+	/**
+	 * true to close after confirm handler has been run. Default true
+	 */
+	closeOnConfirm?: boolean;
+	/**
+	 * true to close after cancel handler has been run. Default true
+	 */
+	closeOnCancel?: boolean;
+	/**
 	 * Handler function to run when the cancel button is clicked
 	 */
 	cancelHandler?(): void;
 	/**
 	 * Handler function to run when the confirm button is clicked
 	 */
-	confirmHandler(): void;
+	confirmHandler?(data?: any): void;
 }

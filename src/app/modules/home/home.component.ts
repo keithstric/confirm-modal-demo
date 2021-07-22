@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ApiMethod} from '../../core/interfaces/api.interface';
+import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
+import {ModalComponentContentComponent} from '@modules/home/components/modal-component-content/modal-component-content.component';
+import {ConfirmModalConfig} from '@shared/components/confirm-modal/confirm-modal.interface';
 import {HttpService} from '../../core/services/http/http.service';
 import {Logger} from '../../core/services/logger/logger';
 import {NotificationService} from '../../core/services/notification/notification.service';
@@ -11,6 +12,8 @@ import {SnackbarMessageTypes} from '../../shared/components/snack-bar/snack-bar.
 	styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+	templateText: string = 'We can use text/data from a property';
+	@ViewChild('templateModal') modalTemplate: TemplateRef<any>;
 
 	constructor(
 		private _http: HttpService
@@ -24,25 +27,63 @@ export class HomeComponent implements OnInit {
 		Logger.info(`Welcome to angular-boilerplate-plain logger`, 'string param', {foo: 'bar', baz: 'boo'}, ['foo', 'bar']);
 	}
 
-	showSnackbar() {
-		NotificationService.showSnackbar({
-			message: 'Some random snackbar "warning" message',
-			messageType: SnackbarMessageTypes.WARNING
-		});
+	showTextModal() {
+		const modalConfig: ConfirmModalConfig = {
+			modalTitle: 'Here is the title',
+			modalSubTitle: 'A Subtitle',
+			modalTextContent: 'Here is some plain text content',
+			data: {foo: 'bar'},
+			confirmButtonLabel: 'Ten Four',
+			confirmHandler: (data) => {
+				console.log('Confirm handler: Confirm button clicked, data=', data);
+			},
+			cancelHandler: () => {
+				console.log('Cancel handler: Cancel button clicked');
+			}
+		};
+		NotificationService.showConfirmDialog(modalConfig);
 	}
 
-	getRandomData() {
-		this._http.doRequest('https://pokeapi.co/api/v2/pokemon', ApiMethod.GET)
-			.subscribe((response) => {
-				Logger.info('response from https://pokeapi.co/api/v2/pokemon', response);
-			});
+	showTemplateModal() {
+		const modalConfig: ConfirmModalConfig = {
+			modalHeaderText: 'Some header text',
+			modalTitle: 'Here is the title',
+			modalSubTitleHtml: `<div>Here is an html sub title</div>`,
+			modalTemplateContent: this.modalTemplate,
+			data: {foo: 'bar'},
+			confirmButtonLabel: 'Roger that',
+			confirmHandler: (data) => {
+				console.log('Confirm handler: Confirm button clicked, data=', data);
+			},
+			cancelHandler: () => {
+				console.log('Cancel handler: Cancel button clicked');
+			}
+		};
+		NotificationService.showConfirmDialog(modalConfig);
 	}
 
-	getSingleData() {
-		this._http.doRequest('https://pokeapi.co/api/v2/pokemon/1/', ApiMethod.GET)
-			.subscribe((response) => {
-				Logger.info('response from https://pokeapi.co/api/v2/pokemon/1', response);
-			});
+	showComponentModal() {
+		const modalConfig: ConfirmModalConfig = {
+			modalHeaderText: 'Some header text',
+			modalTitleHtml: `<i class="fas fa-info"></i> Here is an html title`, // icon style can be found in src/scss/misc/_app-global.scss
+			modalComponentContent: ModalComponentContentComponent,
+			data: {foo: 'bar'},
+			ngModalOptions: {
+				class: 'component-modal',
+				ignoreBackdropClick: true
+			},
+			confirmButtonLabel: 'Roger that',
+			confirmHandler: (data) => {
+				console.log('Confirm handler: Confirm button clicked, data=', data);
+			},
+			cancelHandler: () => {
+				console.log('Cancel handler: Cancel button clicked');
+			}
+		};
+		NotificationService.showConfirmDialog(modalConfig);
 	}
 
+	modalButtonClick() {
+		console.log('Modal button clicked');
+	}
 }
