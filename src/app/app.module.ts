@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {Injector, NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HomeModule} from './modules/home/home.module';
 import {HomeComponent} from './modules/home/home.component';
 import {CoreModule} from './core/core.module';
 import {ServiceLocator} from './core/services/service-locator';
@@ -25,6 +26,7 @@ import { SharedModule } from './shared/shared.module';
 		BrowserModule,
 		CoreModule,
 		LayoutModule,
+		HomeModule,
 		ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
 		SharedModule,
 	],
