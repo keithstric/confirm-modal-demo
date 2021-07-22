@@ -1,6 +1,6 @@
 import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
-import {ModalComponentContentComponent} from '@modules/home/components/modal-component-content/modal-component-content.component';
-import {ConfirmModalConfig} from '@shared/components/confirm-modal/confirm-modal.interface';
+import {ModalComponentContentComponent} from '../../modules/home/components/modal-component-content/modal-component-content.component';
+import {ConfirmModalConfig} from '../../shared/components/confirm-modal/confirm-modal.interface';
 import {HttpService} from '../../core/services/http/http.service';
 import {Logger} from '../../core/services/logger/logger';
 import {NotificationService} from '../../core/services/notification/notification.service';

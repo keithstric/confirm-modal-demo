@@ -1,7 +1,7 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {NgxBootstrapModule} from '@layout/modules/ngx-bootstrap.module';
+import {NgxBootstrapModule} from '../layout/modules/ngx-bootstrap.module';
 import {SnackBarRef} from './components/snack-bar/snack-bar.ref';
 import {UserAvatarComponent} from './components/user-avatar/user-avatar.component';
 import {FileDnDDirective} from './directives/file-dn-d.directive';
