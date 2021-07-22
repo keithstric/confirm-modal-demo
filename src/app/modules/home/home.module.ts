@@ -15,6 +15,9 @@ import { ModalComponentContentComponent } from './components/modal-component-con
 	imports: [
 		CommonModule,
 		SharedModule
+	],
+	entryComponents: [
+		ModalComponentContentComponent
 	]
 })
 export class HomeModule { }
