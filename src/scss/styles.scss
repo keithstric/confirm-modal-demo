@@ -11,6 +11,10 @@
  * the compilation of scss
  */
 @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~ngx-bootstrap/datepicker/bs-datepicker';
 
 @import 'mixins';

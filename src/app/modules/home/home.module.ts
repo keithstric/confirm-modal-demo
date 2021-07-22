@@ -9,7 +9,6 @@ import { ModalComponentContentComponent } from './components/modal-component-con
  */
 @NgModule({
 	declarations: [
-		HomeComponent,
 		ModalComponentContentComponent
 	],
 	imports: [

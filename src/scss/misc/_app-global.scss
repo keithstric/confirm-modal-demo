@@ -57,7 +57,7 @@ button {
 }
 
 .component-modal {
-	i {
+	i:not(.fa-times) {
 		font-size: 0.8rem;
 		color: $success;
 	}
