@@ -51,7 +51,6 @@ export class HomeComponent implements OnInit {
 			modalSubTitleHtml: `<div>Here is an html sub title</div>`,
 			modalTemplateContent: this.modalTemplate,
 			data: {foo: 'bar'},
-			confirmButtonLabel: 'Roger that',
 			confirmHandler: (data) => {
 				console.log('Confirm handler: Confirm button clicked, data=', data);
 			},

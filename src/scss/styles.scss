@@ -2,19 +2,19 @@
 @import 'variables';
 
 /* Any UI framework imports go here */
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 /**
  * Bootstrap implementation, do not need to define in index.html OR angular.json
  * MUST be defined AFTER variables so those variables are used instead of bootstrap's.
  *
- * Sizes defined in rem, em and % or font-sizes in px (use rem here) for bootstrap will break
+ * Sizes defined in rem, em and % or font-sizes in px (use rem here) or bootstrap will break
  * the compilation of scss
  */
 @import '~bootstrap/scss/bootstrap';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~ngx-bootstrap/datepicker/bs-datepicker';
 
 @import 'mixins';
